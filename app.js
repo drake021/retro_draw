@@ -20,6 +20,7 @@ function makeButton(color) {
   let button = $('<button>');
     button.css('background-color', color);
       $('.palette').append(button);
+      $('.palette button').click(onPaletteClick);
 }
 
 function makePalette() {
